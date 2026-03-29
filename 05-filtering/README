@@ -1,1 +1,51 @@
+# Filtering in Excel
 
+## Overview
+This section demonstrates how to filter data in Excel to extract specific information based on conditions. Filtering helps in narrowing down large datasets to focus only on relevant records.
+
+---
+
+## Dataset
+The dataset consists of:
+- Student names
+- Marks in Physics, Chemistry, and Mathematics
+- Total marks (calculated using relative referencing)
+- Percentage (calculated using cell referencing)
+
+---
+
+## Tasks Performed
+
+### 1. Filtering Based on Percentage
+- Applied filter on the "Percentage" column
+- Used Number Filters → Greater Than or Equal To → 90
+- Extracted students who scored 90% and above
+
+---
+
+### 2. Filtering Top Performers
+- Applied filter on "Percentage" column
+- Used Top 10 Filters → Top 3
+- Displayed top 3 students based on percentage
+
+---
+
+### 3. Filtering Based on Subject Marks
+- Applied filter on "Mathematics" column
+- Used Number Filters → Greater Than or Equal To → 90
+- Extracted students scoring high in Mathematics
+
+---
+
+## Key Learnings
+- Understanding how filtering works on tabular data
+- Applying numerical conditions to extract specific records
+- Using Top N filtering to identify best performers
+- Difference between sorting and filtering
+
+---
+
+## Notes
+- Data was first converted into a table before applying filters
+- Filtering does not modify the original dataset, it only displays selected rows
+- Screenshots are included to show the filtering results
