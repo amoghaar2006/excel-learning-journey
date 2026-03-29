@@ -1,1 +1,95 @@
+# Date and Time Handling in Excel
 
+## Overview
+This section focuses on understanding how Excel handles date data, including creating dates from raw inputs and converting dates into their internal numeric representation.
+
+---
+
+## Concepts Covered
+
+### 1. Data Types in Excel
+- Integer: Whole numbers (e.g., 1, 2, 3)
+- Float: Decimal numbers (e.g., 1.5, 2.75)
+- String: Text values (e.g., names)
+- Boolean: TRUE / FALSE values
+
+---
+
+### 2. Creating Dates from Raw Data
+
+#### Input:
+Separate columns for:
+- Day
+- Month
+- Year
+
+#### Method:
+Used the DATE function to combine values into a valid date.
+
+Example:
+=DATE(C2, B2, A2)
+
+Where:
+- C2 → Year
+- B2 → Month
+- A2 → Day
+
+#### Result:
+A proper Excel date is generated.
+
+---
+
+### 3. AutoFill Usage
+- After applying the DATE function to the first row
+- Used AutoFill to apply the same formula to remaining rows
+
+---
+
+### 4. Formatting Dates
+- Right-click → Format Cells → Date
+- Different formats can be selected (e.g., DD-MM-YYYY, Month Name, etc.)
+
+---
+
+### 5. Understanding DATEVALUE Function
+
+#### Purpose:
+Converts a date into its internal numeric representation.
+
+Example:
+=DATEVALUE(D2)
+
+---
+
+### 6. Internal Working of Dates in Excel
+
+- Excel stores dates as numbers
+- Base date: 1 January 1900
+- Each day increments by 1
+
+Example:
+- 01 Jan 1900 → 1
+- 05 Feb 2001 → 36927 (approx)
+
+---
+
+### 7. Viewing Numeric Date Value
+
+To see the numeric value:
+- Apply DATEVALUE function
+- Change cell format to "General"
+
+---
+
+## Key Learnings
+- Dates in Excel are stored as serial numbers
+- DATE function helps construct valid dates from components
+- DATEVALUE converts date into numeric format
+- Formatting controls how the date is displayed, not stored
+
+---
+
+## Notes
+- DATEVALUE is useful only when working with text-based dates
+- If the input is already a valid date, DATEVALUE may not change the visible output unless the format is changed
+- This section focuses on understanding the internal behavior of dates rather than advanced date operations
