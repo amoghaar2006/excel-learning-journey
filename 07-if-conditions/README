@@ -1,1 +1,84 @@
+# IF Conditions in Excel
 
+## Overview
+This section introduces conditional statements in Excel using the IF function. The goal is to understand how decisions can be made based on given conditions.
+
+---
+
+## Concepts Covered
+
+### 1. Basic IF Condition
+
+Syntax:
+=IF(condition, value_if_true, value_if_false)
+
+---
+
+## Examples Implemented
+
+### Example 1
+Condition:
+Check if the country is "India"
+
+Formula:
+=IF(B4="India",5,0)
+
+Explanation:
+- If the value in cell B4 is "India", the output is 5
+- Otherwise, the output is 0
+
+---
+
+### Example 2
+Condition:
+Check if the country is "Pakistan"
+
+Formula:
+=IF(B5="Pakistan",4,0)
+
+Explanation:
+- If the condition is true → return 4
+- If false → return 0
+
+---
+
+### Example 3
+Condition:
+Check if the country is "China"
+
+Formula:
+=IF(B6="China","Yes","No")
+
+Explanation:
+- Returns "Yes" if condition is true
+- Returns "No" if condition is false
+
+---
+
+## Important Notes
+
+- These examples are created to understand the basic working of conditional statements in Excel
+- The formulas demonstrate how logical checks can be applied to text values
+- Screenshots are included to clearly show the conditions used, since formulas alone may not fully explain the workflow
+
+---
+
+## Key Learnings
+
+- Understanding the structure of IF statements
+- Applying conditions on text values
+- Returning both numeric and string outputs
+- Building the foundation for more complex logical operations
+
+---
+
+## Future Scope
+
+- These are basic examples to understand conditional logic
+- In real-world scenarios, conditional statements will be more complex
+- Advanced usage includes:
+  - Nested IF statements
+  - Multiple conditions
+  - Logical functions (AND, OR)
+
+These advanced concepts will be built upon the basic understanding demonstrated here.
