@@ -1,1 +1,80 @@
+# Text Functions and String Manipulation in Excel
 
+## Overview
+This section focuses on handling and manipulating text data in Excel. It includes combining text values, extracting substrings, and creating dynamic text outputs.
+
+---
+
+## Concepts Covered
+
+### 1. Concatenation using CONCATENATE()
+Formula:
+=CONCATENATE([@Prefic],[@Fname]," ",[@Sname])
+
+Explanation:
+- Combines prefix, first name, and surname into a full name
+- A space is manually added using " "
+
+---
+
+### 2. Concatenation using '&' Operator
+Formula:
+=[@Prefic] & " " & [@Fname] & " " & [@Sname]
+
+Explanation:
+- Alternative and more efficient way to join text
+- Preferred over CONCATENATE in modern Excel usage
+
+---
+
+### 3. Dynamic Text Creation
+Formula:
+="My name is " & H3
+
+Explanation:
+- Combines fixed text with a cell value
+- Useful for generating readable outputs
+
+---
+
+### 4. Extracting Text using LEFT()
+Formula:
+=LEFT([@City],3)
+
+Explanation:
+- Extracts first 3 characters from the text
+
+---
+
+### 5. Extracting Text using RIGHT()
+Formula:
+=RIGHT([@City],3)
+
+Explanation:
+- Extracts last 3 characters from the text
+
+---
+
+## Documentation Approach
+
+- Screenshots are included showing:
+  - Final output tables
+  - Formula bar (fx) displaying the exact formula used
+- This helps in clearly understanding both the result and the logic behind it
+
+---
+
+## Key Learnings
+
+- Combining multiple text fields into meaningful output
+- Using both traditional and modern concatenation methods
+- Extracting specific parts of text using built-in functions
+- Understanding how formulas dynamically update results
+
+---
+
+## Notes
+
+- '&' operator is preferred over CONCATENATE for simplicity
+- Text functions are widely used in data cleaning and preprocessing
+- These concepts form the base for more advanced string operations in Excel
