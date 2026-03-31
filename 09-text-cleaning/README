@@ -1,1 +1,100 @@
+# Text Cleaning and Search Functions in Excel
 
+## Overview
+This section focuses on text manipulation and cleaning techniques in Excel. 
+It covers essential functions used to process, modify, and extract text data, 
+which are commonly required in real-world data analysis tasks.
+
+---
+
+## Files Included
+
+1. text-cleaning-and-search-functions.xlsx  
+   - Contains the actual implementation of all functions  
+   - Includes examples of text cleaning, extraction, and modification  
+
+2. text-functions-formulas-view.xlsx  
+   - Shows all formulas used in the sheet  
+   - Generated using Excel formula view (Ctrl + `)  
+   - Helps in understanding the exact logic applied in each step  
+
+---
+
+## Concepts Covered
+
+### 1. Text Cleaning
+- TRIM()  
+  Removes extra spaces from text  
+
+---
+
+### 2. Text Searching
+- FIND()  
+  Case-sensitive search  
+- SEARCH()  
+  Case-insensitive search  
+
+---
+
+### 3. Text Replacement
+- REPLACE()  
+  Replaces text based on position  
+- SUBSTITUTE()  
+  Replaces specific text occurrences  
+
+---
+
+### 4. Text Extraction
+- LEFT()  
+  Extracts characters from the beginning  
+- RIGHT()  
+  Extracts characters from the end  
+
+---
+
+### 5. Text Concatenation
+- CONCATENATE()  
+- & operator  
+
+Used to combine multiple text fields into a single output  
+
+---
+
+### 6. Dynamic Text Creation
+- Combining fixed text with cell values  
+Example:  
+="My name is " & cell_reference  
+
+---
+
+## Approach
+
+- Implemented each function using structured examples  
+- Used Excel tables and cell references for better organization  
+- Verified outputs using formula view (Ctrl + `)  
+- Maintained clarity between input, processing, and output  
+
+---
+
+## Key Learnings
+
+- How to clean messy text data  
+- Difference between FIND and SEARCH  
+- Difference between REPLACE and SUBSTITUTE  
+- Efficient use of concatenation techniques  
+- Importance of text processing in data preparation  
+
+---
+
+## Notes
+
+- TRIM is essential for handling inconsistent spacing in real datasets  
+- SUBSTITUTE is more flexible than REPLACE for text-based replacement  
+- '&' operator is preferred over CONCATENATE in modern Excel  
+- Formula view file is included for transparency and better understanding  
+
+---
+
+## Conclusion
+
+This section builds a strong foundation in text processing, which is a critical step in data analysis workflows. These functions are widely used in cleaning and preparing raw data before further analysis.
