@@ -1,1 +1,91 @@
+# Numeric Functions and Conditional Formatting in Excel
 
+## Overview
+This section demonstrates the use of numeric functions along with conditional formatting to analyze and present student performance data. It combines calculation, value transformation, and visual highlighting.
+
+---
+
+## Dataset
+The dataset includes:
+- Student names
+- Marks in subjects
+- Total marks (calculated)
+- Percentage (calculated)
+
+---
+
+## Tasks Performed
+
+### 1. Total and Percentage Calculation
+- Calculated total marks using cell referencing
+- Calculated percentage using formulae
+- Applied AutoFill for all rows
+
+---
+
+### 2. ROUND Function
+- Used to limit decimal places in percentage
+- Improves readability of numerical data
+
+Example:
+=ROUND(value, 2)
+
+---
+
+### 3. FLOOR Function
+- Used to round down values to nearest integer or multiple
+- Helps standardize values
+
+Example:
+=FLOOR(value, 1)
+
+---
+
+### 4. LEN Function
+- Used to calculate the length of text values
+- Helps in analyzing text data
+
+Example:
+=LEN(text)
+
+---
+
+### 5. Conditional Formatting (Subject Marks)
+- Applied on Physics and Mathematics columns
+- Condition:
+  - Highlight marks less than 40
+- Purpose:
+  - Identify low performance
+
+---
+
+### 6. Conditional Formatting (Percentage)
+- Applied on Percentage column
+- Condition:
+  - Highlight values less than 35
+- Format:
+  - Red color for easy identification
+
+---
+
+## Key Learnings
+
+- Using numeric functions to control and standardize data
+- Understanding how ROUND and FLOOR affect values differently
+- Using LEN for text analysis
+- Combining calculations with conditional formatting for better insights
+
+---
+
+## Notes
+
+- ROUND improves readability by limiting decimal places
+- FLOOR ensures values are rounded down consistently
+- LEN is useful for validating and analyzing text inputs
+- Conditional formatting enhances data interpretation visually
+
+---
+
+## Conclusion
+
+This section demonstrates how combining numeric functions with conditional formatting can improve both accuracy and clarity in data analysis workflows.
