@@ -1,7 +1,7 @@
-# Data Lookup using VLOOKUP in Excel
+# Data Lookup using VLOOKUP and HLOOKUP in Excel
 
 ## Overview
-This section demonstrates the use of the VLOOKUP function to retrieve data from a table based on a given lookup value. It focuses on mapping an ID to its corresponding details.
+This section demonstrates data retrieval techniques using both VLOOKUP (vertical lookup) and HLOOKUP (horizontal lookup). These functions are used to map and extract relevant data based on a given input.
 
 ---
 
@@ -17,24 +17,38 @@ Each record is uniquely identified using the ID column.
 
 ---
 
-## Task Performed
+## Tasks Performed
 
 ### 1. Data Lookup using VLOOKUP
 
 - Used VLOOKUP to search for a specific ID
-- Retrieved corresponding values from the dataset
+- Retrieved corresponding values such as City
 
 Example:
 =VLOOKUP(D15,Table1,5,FALSE)
 
 ---
 
+### 2. Data Lookup using HLOOKUP
+
+- Used HLOOKUP to retrieve data from a horizontally arranged dataset
+
+Example:
+=HLOOKUP(lookup_value, table_array, row_index, FALSE)
+
+---
+
 ## Explanation
 
-- D15 → Lookup value (ID)
-- Table1 → Entire table range
-- 5 → Column index (City)
-- FALSE → Exact match
+### VLOOKUP:
+- Searches vertically (top to bottom)
+- Looks in the first column of the table
+- Returns value from a specified column index
+
+### HLOOKUP:
+- Searches horizontally (left to right)
+- Looks in the first row of the table
+- Returns value from a specified row index
 
 ---
 
@@ -44,7 +58,7 @@ Example:
 - Initially used only a single column as the lookup range:
   =VLOOKUP(D15,Table1[ID],5,FALSE)
 
-- This resulted in:
+- Result:
   #REF! error
 
 ### Reason:
@@ -52,28 +66,30 @@ Example:
 - Column index (5) cannot be accessed from a single-column range
 
 ### Solution:
-- Corrected the range to include the entire table:
+- Corrected the range to:
   =VLOOKUP(D15,Table1,5,FALSE)
 
 ---
 
 ## Key Learnings
 
-- VLOOKUP requires the lookup column to be the first column in the range
-- Always select the full table, not just one column
-- Column index must exist within the selected range
+- VLOOKUP works on vertical datasets
+- HLOOKUP works on horizontal datasets
+- Full table range must always be selected
+- Column/row index must exist within the range
 - FALSE ensures exact matching
 
 ---
 
 ## Notes
 
-- VLOOKUP searches vertically (top to bottom)
-- It returns values from the specified column index
-- Proper range selection is critical to avoid errors
+- VLOOKUP is more commonly used in real-world datasets
+- HLOOKUP is less common but useful for specific layouts
+- Both functions are foundational for data mapping tasks
 
 ---
 
 ## Conclusion
 
-This section builds a foundation for data mapping and retrieval, which is essential in real-world data analysis tasks such as joining datasets and extracting relevant information.
+This section demonstrates how lookup functions can be used to retrieve and map data efficiently. 
+These concepts are essential for working with structured datasets and form the basis for more advanced lookup techniques..
