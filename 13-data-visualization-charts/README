@@ -1,1 +1,38 @@
+# Data Visualization using Charts in Excel
 
+## Overview
+This section demonstrates the creation and customization of charts in Excel for visualizing data.
+
+---
+
+## Tasks Performed
+
+- Selected relevant data columns
+- Used CTRL key to select non-adjacent columns (Name, Maths, Science)
+- Created different types of charts:
+  - Bar Chart (for comparison)
+  - Pie Chart (for distribution)
+
+---
+
+## Customization
+
+- Added chart titles
+- Added axis labels
+- Applied different chart styles
+- Adjusted formatting for better readability
+
+---
+
+## Key Learnings
+
+- Bar charts are useful for comparing values across categories
+- Pie charts are useful for showing proportion of a whole
+- Proper data selection is important for accurate visualization
+- Customizing charts improves clarity and presentation
+
+---
+
+## Conclusion
+
+This section provides a basic understanding of data visualization in Excel using charts and highlights how different chart types serve different purposes.
